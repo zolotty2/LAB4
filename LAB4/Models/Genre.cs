@@ -11,4 +11,3 @@ public partial class Genre
 
     public virtual ICollection<TitlesGenre> TitlesGenres { get; set; } = new List<TitlesGenre>();
 }
-//
