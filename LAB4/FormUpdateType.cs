@@ -1,20 +1,11 @@
-﻿using LAB4;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
 using AppContext = LAB4.Models.AppContext;
 namespace LAB4
 {
-public partial class FormAddType : Form
+public partial class FormUpdateType : Form
 {
     private AppContext db;
-    public FormAddType()
+    public FormUpdateType()
 
     {
         InitializeComponent();
@@ -39,7 +30,7 @@ public partial class FormAddType : Form
                 BtnSaveChanges.Enabled = true;
 
             }
-            FormAddType formAddType = new FormAddType();
+            FormUpdateType formAddType = new FormUpdateType();
             string newTypeAnime = textBoxStatus.Text;
 
             bool exists = db.Types.Any(t => t.TypeName == newTypeAnime);//.ToLower()

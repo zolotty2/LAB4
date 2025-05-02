@@ -1,6 +1,6 @@
 ﻿namespace LAB4
 {
-    partial class FormAddGenre
+    partial class FormUpdateGenre
     {
         /// <summary>
         /// Required designer variable.
@@ -118,14 +118,14 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
-            // FormAddGenre
+            // FormUpdateGenre
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(594, 153);
             Controls.Add(panelFill);
             Controls.Add(flowLayoutPanelBottom);
-            Name = "FormAddGenre";
+            Name = "FormUpdateGenre";
             Text = "FormAddGenre";
             Load += FormAddGenre_Load;
             panelFill.ResumeLayout(false);

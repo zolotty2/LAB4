@@ -1,13 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using AppContext = LAB4.Models.AppContext;
 using Status = LAB4.Models.Status;
 
@@ -43,7 +36,7 @@ namespace LAB4
         }
         private void BtnAddType_Click(object sender, EventArgs e)
         {
-            FormAddStatus formAddStatus = new();
+            FormUpdateStatus formAddStatus = new();
             DialogResult result = formAddStatus.ShowDialog(this);
 
             if (result == DialogResult.Cancel)
@@ -73,7 +66,7 @@ namespace LAB4
                 return;
             }
             Status status = db.Statuses.Find(id);
-            FormAddStatus formAddStatus = new();
+            FormUpdateStatus formAddStatus = new();
             formAddStatus.textBoxStatus.Text = status.StatusName;
 
             DialogResult result = formAddStatus.ShowDialog(this);

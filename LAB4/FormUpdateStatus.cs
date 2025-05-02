@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
+﻿using System.ComponentModel;
 using AppContext = LAB4.Models.AppContext;
 namespace LAB4
 {
-    public partial class FormAddStatus : Form
+    public partial class FormUpdateStatus : Form
     {
         private AppContext db;
-        public FormAddStatus()
+        public FormUpdateStatus()
 
         {
             InitializeComponent();
@@ -39,7 +30,7 @@ namespace LAB4
                 BtnSaveChanges.Enabled = true;
 
             }
-            FormAddStatus formAddStatus = new FormAddStatus();
+            FormUpdateStatus formAddStatus = new FormUpdateStatus();
             string newStatusAnime = textBoxStatus.Text;
 
             bool exists = db.Statuses.Any(t => t.StatusName == newStatusAnime);//.ToLower()

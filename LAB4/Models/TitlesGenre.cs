@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace LAB4.Models;
+﻿namespace LAB4.Models;
 
 public partial class TitlesGenre {
     public int Id { get; set; }

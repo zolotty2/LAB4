@@ -1,14 +1,13 @@
 ﻿using System.ComponentModel;
-using System.Windows.Forms.VisualStyles;
 using AppContext = LAB4.Models.AppContext;
 
 namespace LAB4
 {
-    public partial class FormAddGenre : Form
+    public partial class FormUpdateGenre : Form
     {
         private AppContext db;
 
-        public FormAddGenre()
+        public FormUpdateGenre()
         {
             InitializeComponent();
             this.db = new AppContext();
@@ -27,7 +26,7 @@ namespace LAB4
                 BtnSaveChanges.Enabled = true;
 
             }
-            FormAddGenre formAddGenre = new FormAddGenre();
+            FormUpdateGenre formAddGenre = new FormUpdateGenre();
             string newGenreAnime = textBoxGenre.Text;
 
             bool exists = db.Genres.Any(t => t.GenreName == newGenreAnime);//.ToLower()

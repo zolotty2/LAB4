@@ -27,7 +27,7 @@ namespace LAB4
         }
         private void BtnAddGenre_Click(object sender, EventArgs e)
         {
-            FormAddGenre formAddGenre = new();
+            FormUpdateGenre formAddGenre = new();
             DialogResult result = formAddGenre.ShowDialog(this);
 
             if (result == DialogResult.Cancel)
@@ -63,7 +63,7 @@ namespace LAB4
                 return;
             }
             Genre genre = db.Genres.Find(id);
-            FormAddGenre formAddGenre = new();
+            FormUpdateGenre formAddGenre = new();
             formAddGenre.textBoxGenre.Text = genre.GenreName;
 
             DialogResult result = formAddGenre.ShowDialog(this);

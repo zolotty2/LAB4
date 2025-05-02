@@ -36,7 +36,7 @@ namespace LAB4
         }
         private void BtnAddType_Click(object sender, EventArgs e)
         {
-            FormAddType formAddType = new();
+            FormUpdateType formAddType = new();
             DialogResult result = formAddType.ShowDialog(this);
 
             if (result == DialogResult.Cancel)
@@ -66,7 +66,7 @@ namespace LAB4
                 return;
             }
             Type type = db.Types.Find(id);
-            FormAddType formAddType = new();
+            FormUpdateType formAddType = new();
             formAddType.textBoxStatus.Text = type.TypeName;
 
             DialogResult result = formAddType.ShowDialog(this);

@@ -1,6 +1,6 @@
 ﻿namespace LAB4
 {
-    partial class FormAddType
+    partial class FormUpdateStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -35,10 +35,10 @@
             flowLayoutPanelBottom = new FlowLayoutPanel();
             BtnSaveChanges = new Button();
             BtnCancel = new Button();
-            errorProvider = new ErrorProvider(components);
+            errorProvider1 = new ErrorProvider(components);
             panelFill.SuspendLayout();
             flowLayoutPanelBottom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // panelFill
@@ -50,29 +50,32 @@
             panelFill.Location = new Point(0, 0);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
-            panelFill.Size = new Size(526, 78);
-            panelFill.TabIndex = 0;
+            panelFill.Size = new Size(399, 70);
+            panelFill.TabIndex = 1;
             // 
             // textBoxStatus
             // 
             textBoxStatus.Dock = DockStyle.Top;
+            textBoxStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBoxStatus.Location = new Point(10, 35);
             textBoxStatus.Name = "textBoxStatus";
-            textBoxStatus.Size = new Size(506, 32);
+            textBoxStatus.Size = new Size(379, 33);
             textBoxStatus.TabIndex = 1;
             textBoxStatus.TextChanged += textBoxType_TextChanged;
             textBoxStatus.Validating += nameBox_Validating;
+            textBoxStatus.Validated += textBoxType_TextChanged;
             // 
             // labelType
             // 
             labelType.AutoSize = true;
             labelType.Dock = DockStyle.Top;
+            labelType.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             labelType.Location = new Point(10, 10);
             labelType.Margin = new Padding(3, 15, 3, 0);
             labelType.Name = "labelType";
-            labelType.Size = new Size(104, 25);
+            labelType.Size = new Size(128, 25);
             labelType.TabIndex = 0;
-            labelType.Text = "Тип аниме";
+            labelType.Text = "Статус аниме";
             // 
             // flowLayoutPanelBottom
             // 
@@ -81,16 +84,17 @@
             flowLayoutPanelBottom.Controls.Add(BtnSaveChanges);
             flowLayoutPanelBottom.Controls.Add(BtnCancel);
             flowLayoutPanelBottom.Dock = DockStyle.Bottom;
-            flowLayoutPanelBottom.Location = new Point(0, 78);
+            flowLayoutPanelBottom.Location = new Point(0, 70);
             flowLayoutPanelBottom.Name = "flowLayoutPanelBottom";
             flowLayoutPanelBottom.Padding = new Padding(10);
-            flowLayoutPanelBottom.Size = new Size(526, 61);
-            flowLayoutPanelBottom.TabIndex = 0;
+            flowLayoutPanelBottom.Size = new Size(399, 61);
+            flowLayoutPanelBottom.TabIndex = 2;
             // 
             // BtnSaveChanges
             // 
             BtnSaveChanges.AutoSize = true;
             BtnSaveChanges.DialogResult = DialogResult.OK;
+            BtnSaveChanges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             BtnSaveChanges.Location = new Point(13, 13);
             BtnSaveChanges.Name = "BtnSaveChanges";
             BtnSaveChanges.Size = new Size(115, 35);
@@ -102,6 +106,7 @@
             // 
             BtnCancel.AutoSize = true;
             BtnCancel.DialogResult = DialogResult.Cancel;
+            BtnCancel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             BtnCancel.Location = new Point(134, 13);
             BtnCancel.Name = "BtnCancel";
             BtnCancel.Size = new Size(100, 35);
@@ -109,30 +114,25 @@
             BtnCancel.Text = "Отмена";
             BtnCancel.UseVisualStyleBackColor = true;
             // 
-            // errorProvider
+            // errorProvider1
             // 
-            errorProvider.ContainerControl = this;
+            errorProvider1.ContainerControl = this;
             // 
-            // FormAddType
+            // FormUpdateStatus
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(526, 139);
+            ClientSize = new Size(399, 131);
             Controls.Add(panelFill);
             Controls.Add(flowLayoutPanelBottom);
-            Font = new Font("Segoe UI", 14F);
-            Margin = new Padding(5);
-            Name = "FormAddType";
-            Text = "Информация о типе аниме";
-            Load += FormAddType_Load;
-            TextChanged += textBoxType_TextChanged;
-            Validating += nameBox_Validating;
-            Validated += textBoxType_TextChanged;
+            Name = "FormUpdateStatus";
+            Text = "FormAddStatus";
+            Load += FormAddStatus_Load;
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
             flowLayoutPanelBottom.ResumeLayout(false);
             flowLayoutPanelBottom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,11 +140,11 @@
         #endregion
 
         private Panel panelFill;
+        protected internal TextBox textBoxStatus;
         private Label labelType;
         private FlowLayoutPanel flowLayoutPanelBottom;
         private Button BtnSaveChanges;
         private Button BtnCancel;
-        protected internal TextBox textBoxStatus;
-        private ErrorProvider errorProvider;
+        private ErrorProvider errorProvider1;
     }
 }
