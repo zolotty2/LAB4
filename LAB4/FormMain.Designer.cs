@@ -31,6 +31,7 @@
             btnTypes = new Button();
             BtnGenres = new Button();
             BtnStatus = new Button();
+            BtnShowTitles = new Button();
             SuspendLayout();
             // 
             // btnTypes
@@ -72,12 +73,26 @@
             BtnStatus.UseVisualStyleBackColor = false;
             BtnStatus.Click += BtnStatus_Click;
             // 
+            // BtnShowTitles
+            // 
+            BtnShowTitles.AutoSize = true;
+            BtnShowTitles.BackColor = SystemColors.ButtonFace;
+            BtnShowTitles.Font = new Font("Segoe UI", 14F);
+            BtnShowTitles.Location = new Point(12, 138);
+            BtnShowTitles.Name = "BtnShowTitles";
+            BtnShowTitles.Size = new Size(328, 36);
+            BtnShowTitles.TabIndex = 3;
+            BtnShowTitles.Text = "Список тайтлов аниме";
+            BtnShowTitles.UseVisualStyleBackColor = false;
+            BtnShowTitles.Click += BtnShowTitles_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(1143, 630);
+            Controls.Add(BtnShowTitles);
             Controls.Add(BtnStatus);
             Controls.Add(BtnGenres);
             Controls.Add(btnTypes);
@@ -95,5 +110,6 @@
         private Button btnTypes;
         private Button BtnGenres;
         private Button BtnStatus;
+        private Button BtnShowTitles;
     }
 }

@@ -54,6 +54,7 @@
             // dataGridViewStatus
             // 
             dataGridViewStatus.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewStatus.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewStatus.BackgroundColor = Color.White;
             dataGridViewStatus.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewStatus.Dock = DockStyle.Fill;

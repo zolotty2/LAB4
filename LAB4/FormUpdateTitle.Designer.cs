@@ -75,16 +75,17 @@
             panelFill.Location = new Point(0, 0);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
-            panelFill.Size = new Size(800, 550);
+            panelFill.Size = new Size(800, 676);
             panelFill.TabIndex = 2;
             // 
             // textBoxDescription
             // 
             textBoxDescription.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescription.Location = new Point(8, 423);
+            textBoxDescription.Location = new Point(10, 423);
+            textBoxDescription.Multiline = true;
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.ScrollBars = ScrollBars.Vertical;
-            textBoxDescription.Size = new Size(780, 33);
+            textBoxDescription.Size = new Size(780, 150);
             textBoxDescription.TabIndex = 16;
             textBoxDescription.Text = resources.GetString("textBoxDescription.Text");
             // 
@@ -160,12 +161,14 @@
             labelType.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             labelType.Location = new Point(10, 129);
             labelType.Name = "labelType";
-            labelType.Size = new Size(42, 25);
+            labelType.Size = new Size(44, 25);
             labelType.TabIndex = 7;
-            labelType.Text = "тип";
+            labelType.Text = "Тип";
             // 
             // comboBoxTypes
             // 
+            comboBoxTypes.BackColor = Color.White;
+            comboBoxTypes.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTypes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             comboBoxTypes.FormattingEnabled = true;
             comboBoxTypes.Location = new Point(10, 157);
@@ -191,9 +194,9 @@
             labelName.Location = new Point(10, 68);
             labelName.Margin = new Padding(3, 15, 3, 0);
             labelName.Name = "labelName";
-            labelName.Size = new Size(51, 25);
+            labelName.Size = new Size(54, 25);
             labelName.TabIndex = 4;
-            labelName.Text = " имя";
+            labelName.Text = " Имя";
             // 
             // flowLayoutPanelBottom
             // 
@@ -202,7 +205,7 @@
             flowLayoutPanelBottom.Controls.Add(BtnSaveChanges);
             flowLayoutPanelBottom.Controls.Add(BtnCancel);
             flowLayoutPanelBottom.Dock = DockStyle.Bottom;
-            flowLayoutPanelBottom.Location = new Point(10, 479);
+            flowLayoutPanelBottom.Location = new Point(10, 605);
             flowLayoutPanelBottom.Name = "flowLayoutPanelBottom";
             flowLayoutPanelBottom.Padding = new Padding(10);
             flowLayoutPanelBottom.Size = new Size(780, 61);
@@ -257,10 +260,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 550);
+            ClientSize = new Size(800, 676);
             Controls.Add(panelFill);
             Name = "FormUpdateTitle";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Список тайтлов анме";
+            Load += FormUpdateTitle_Load;
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownDuration).EndInit();
@@ -281,14 +286,14 @@
         protected internal TextBox textBoxName;
         private Label labelName;
         private Label labelType;
-        private ComboBox comboBoxTypes;
         private Label labelCountSeries;
-        private NumericUpDown numericUpDownCountSeries;
-        private NumericUpDown numericUpDownDuration;
         private Label labelDuration;
         protected internal TextBox textBoxStudio;
         private Label labelStudio;
         protected internal TextBox textBoxDescription;
         private Label labelDescription;
+        protected internal ComboBox comboBoxTypes;
+        protected internal NumericUpDown numericUpDownCountSeries;
+        protected internal NumericUpDown numericUpDownDuration;
     }
 }

@@ -109,7 +109,7 @@ namespace LAB4
             this.dataGridViewStatus.DataSource = this.db.Statuses.Local.OrderBy(o => o.StatusName).ToList();
         }
 
-
+        
         private void FormStatusList_Load(object sender, EventArgs e)
         {
 

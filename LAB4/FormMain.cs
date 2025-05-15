@@ -29,5 +29,11 @@ namespace LAB4
             FormStatusList formStatusList = new FormStatusList();
             formStatusList.Show();
         }
+
+        private void BtnShowTitles_Click(object sender, EventArgs e)
+        {
+            FormListTitles formListTitles = new FormListTitles();
+            formListTitles.Show();
+        }
     }
 }

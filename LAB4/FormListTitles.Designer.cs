@@ -61,6 +61,7 @@
             BtnAddTitle.TabIndex = 0;
             BtnAddTitle.Text = "Добавить";
             BtnAddTitle.UseVisualStyleBackColor = true;
+            BtnAddTitle.Click += BtnAddTitle_Click;
             // 
             // BtnUpdateTitle
             // 
@@ -116,9 +117,11 @@
             Controls.Add(panelFill);
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "FormListTitles";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormListTitles";
+            Load += FormListTitles_Load;
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             panelFill.ResumeLayout(false);

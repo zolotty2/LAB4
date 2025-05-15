@@ -16,5 +16,10 @@ namespace LAB4
         {
             InitializeComponent();
         }
+
+        private void FormUpdateTitle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
