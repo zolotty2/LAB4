@@ -72,6 +72,7 @@
             BtnUpdateTitle.TabIndex = 1;
             BtnUpdateTitle.Text = "Редактировать";
             BtnUpdateTitle.UseVisualStyleBackColor = true;
+            BtnUpdateTitle.Click += BtnUpdateTitle_Click;
             // 
             // BtnDeleteTitle
             // 
@@ -82,6 +83,7 @@
             BtnDeleteTitle.TabIndex = 2;
             BtnDeleteTitle.Text = "Удалить";
             BtnDeleteTitle.UseVisualStyleBackColor = true;
+            BtnDeleteTitle.Click += BtnDeleteTitle_Click;
             // 
             // panelFill
             // 

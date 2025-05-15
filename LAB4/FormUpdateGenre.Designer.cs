@@ -63,7 +63,6 @@
             textBoxGenre.TabIndex = 1;
             textBoxGenre.TextChanged += TextBoxGenre_TextChanged;
             textBoxGenre.Validating += TextBoxGenre_Validating;
-            textBoxGenre.Validated += TextBoxGenre_TextChanged;
             // 
             // labelGenre
             // 
@@ -127,7 +126,6 @@
             Controls.Add(flowLayoutPanelBottom);
             Name = "FormUpdateGenre";
             Text = "FormAddGenre";
-            Load += FormAddGenre_Load;
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
             flowLayoutPanelBottom.ResumeLayout(false);

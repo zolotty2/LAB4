@@ -63,7 +63,6 @@
             textBoxStatus.TabIndex = 1;
             textBoxStatus.TextChanged += textBoxType_TextChanged;
             textBoxStatus.Validating += nameBox_Validating;
-            textBoxStatus.Validated += textBoxType_TextChanged;
             // 
             // labelType
             // 

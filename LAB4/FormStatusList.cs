@@ -91,7 +91,7 @@ namespace LAB4
                 MessageBoxIcon.Question
                 );
 
-            if (result == DialogResult.OK)
+            if (result == DialogResult.No)
                 return;
 
             int index = dataGridViewStatus.SelectedRows[0].Index;

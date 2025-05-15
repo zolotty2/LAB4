@@ -48,7 +48,7 @@ namespace LAB4
         }
 
         private void TextBoxGenre_Validating(object sender, CancelEventArgs e)
-        {     
+        {
             if (String.IsNullOrEmpty(textBoxGenre.Text))
             {
                 errorProvider1.SetError(textBoxGenre, "Поле не может быть пустым");
@@ -59,11 +59,6 @@ namespace LAB4
                 errorProvider1.Clear();
                 BtnSaveChanges.Enabled = true;
             }
-        }
-
-        private void FormAddGenre_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

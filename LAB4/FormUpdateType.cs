@@ -33,7 +33,7 @@ public partial class FormUpdateType : Form
             FormUpdateType formAddType = new FormUpdateType();
             string newTypeAnime = textBoxStatus.Text;
 
-            bool exists = db.Types.Any(t => t.TypeName == newTypeAnime);//.ToLower()
+            bool exists = db.Types.Any(t => t.TypeName == newTypeAnime);
 
 
 

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUpdateTitle));
             panelFill = new Panel();
             textBoxDescription = new TextBox();
             labelDescription = new Label();
@@ -87,7 +86,6 @@
             textBoxDescription.ScrollBars = ScrollBars.Vertical;
             textBoxDescription.Size = new Size(780, 150);
             textBoxDescription.TabIndex = 16;
-            textBoxDescription.Text = resources.GetString("textBoxDescription.Text");
             // 
             // labelDescription
             // 
@@ -123,6 +121,7 @@
             // 
             numericUpDownDuration.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             numericUpDownDuration.Location = new Point(10, 290);
+            numericUpDownDuration.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownDuration.Name = "numericUpDownDuration";
             numericUpDownDuration.Size = new Size(780, 33);
             numericUpDownDuration.TabIndex = 12;
@@ -141,6 +140,7 @@
             // 
             numericUpDownCountSeries.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             numericUpDownCountSeries.Location = new Point(10, 226);
+            numericUpDownCountSeries.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownCountSeries.Name = "numericUpDownCountSeries";
             numericUpDownCountSeries.Size = new Size(780, 33);
             numericUpDownCountSeries.TabIndex = 10;
@@ -194,9 +194,9 @@
             labelName.Location = new Point(10, 68);
             labelName.Margin = new Padding(3, 15, 3, 0);
             labelName.Name = "labelName";
-            labelName.Size = new Size(54, 25);
+            labelName.Size = new Size(49, 25);
             labelName.TabIndex = 4;
-            labelName.Text = " Имя";
+            labelName.Text = "Имя";
             // 
             // flowLayoutPanelBottom
             // 
@@ -215,6 +215,7 @@
             // 
             BtnSaveChanges.AutoSize = true;
             BtnSaveChanges.DialogResult = DialogResult.OK;
+            BtnSaveChanges.Dock = DockStyle.Fill;
             BtnSaveChanges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             BtnSaveChanges.Location = new Point(13, 13);
             BtnSaveChanges.Name = "BtnSaveChanges";
@@ -227,6 +228,7 @@
             // 
             BtnCancel.AutoSize = true;
             BtnCancel.DialogResult = DialogResult.Cancel;
+            BtnCancel.Dock = DockStyle.Fill;
             BtnCancel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             BtnCancel.Location = new Point(134, 13);
             BtnCancel.Name = "BtnCancel";

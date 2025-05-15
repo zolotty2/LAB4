@@ -125,9 +125,6 @@
             Name = "FormUpdateType";
             Text = "Информация о типе аниме";
             Load += FormAddType_Load;
-            TextChanged += textBoxType_TextChanged;
-            Validating += nameBox_Validating;
-            Validated += textBoxType_TextChanged;
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
             flowLayoutPanelBottom.ResumeLayout(false);
