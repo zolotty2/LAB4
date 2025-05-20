@@ -106,7 +106,7 @@ namespace LAB4
         }
         private void FormGenresList_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }

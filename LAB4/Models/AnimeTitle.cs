@@ -1,5 +1,5 @@
 ﻿namespace LAB4.Models;
-
+//
 public partial class AnimeTitle
 {
     public int Id { get; set; }

@@ -126,6 +126,7 @@
             Controls.Add(flowLayoutPanelBottom);
             Name = "FormUpdateGenre";
             Text = "FormAddGenre";
+            Load += FormUpdateGenre_Load;
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
             flowLayoutPanelBottom.ResumeLayout(false);

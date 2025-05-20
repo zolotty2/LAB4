@@ -1,5 +1,5 @@
 namespace LAB4
-{
+{//
     internal static class Program
     {
         /// <summary>

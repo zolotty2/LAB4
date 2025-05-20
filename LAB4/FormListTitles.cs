@@ -60,7 +60,7 @@ namespace LAB4
 
         private void FormListTitles_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void BtnAddTitle_Click(object sender, EventArgs e)

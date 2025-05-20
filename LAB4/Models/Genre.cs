@@ -1,5 +1,5 @@
 ﻿namespace LAB4.Models;
-
+//
 public partial class Genre
 {
     public short Id { get; set; }
