@@ -66,7 +66,7 @@ namespace LAB4
 
         private void FormAddStatus_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }

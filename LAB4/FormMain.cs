@@ -21,7 +21,7 @@ namespace LAB4
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void BtnStatus_Click(object sender, EventArgs e)

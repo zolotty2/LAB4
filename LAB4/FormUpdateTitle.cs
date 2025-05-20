@@ -19,7 +19,7 @@ namespace LAB4
 
         private void FormUpdateTitle_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }

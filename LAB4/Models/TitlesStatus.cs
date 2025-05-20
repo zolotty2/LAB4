@@ -1,7 +1,7 @@
 ﻿namespace LAB4.Models;
 
 public partial class TitlesStatus
-{
+{//
     public int Id { get; set; }
 
     public short IdStatus { get; set; }

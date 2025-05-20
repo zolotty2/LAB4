@@ -60,5 +60,10 @@ namespace LAB4
                 BtnSaveChanges.Enabled = true;
             }
         }
+
+        private void FormUpdateGenre_Load(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }

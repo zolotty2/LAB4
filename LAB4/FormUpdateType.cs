@@ -14,7 +14,7 @@ public partial class FormUpdateType : Form
 
     private void FormAddType_Load(object sender, EventArgs e)
     {
-
+        //
     }
 
     private void textBoxType_TextChanged(object sender, EventArgs e)

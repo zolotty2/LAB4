@@ -112,7 +112,7 @@ namespace LAB4
         
         private void FormStatusList_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }

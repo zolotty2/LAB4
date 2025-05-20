@@ -1,7 +1,7 @@
 ﻿namespace LAB4.Models;
 
 public partial class TitlesGenre {
-    public int Id { get; set; }
+    public int Id { get; set; }//
 
     public short IdGenre { get; set; }
 
